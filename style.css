@@ -26,7 +26,7 @@
     position: relative;
     background-color: rgb(21, 254, 21);
     left: 450px;
-    /* animation: block 2s linear  infinite; */
+    animation: block 2s linear  infinite;
     
    
 }
@@ -47,7 +47,7 @@
     position: relative;
     left: 450px;
     top: -500px;
-    /* animation: block 2s linear  infinite; */
+    animation: block 2s linear  infinite;
    background-color: white;
     /* border: 2px solid black; */
     
