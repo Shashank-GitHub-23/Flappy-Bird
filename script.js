@@ -9,15 +9,23 @@ function holeMovement(){
     hole.style.top = newTop;
 }
 
-let fall = setInterval(() => {
+let fall = setInterval( function () {
     let fallValue = parseInt(window.getComputedStyle(bird).getPropertyValue('top'));
     if (CurrentflyValue == 0) {
         bird.style.top = (fallValue + 2) + "px"; 
     }
-},10);
+    let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+    let birdTop = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
+    let holeTop = (500 + birdTop);
+    if (( birdTop > 450) || ((blockLeft < 50) && (blockLeft > -98) && ((birdTop < holeTop) || (birdTop > holeTop + 150))))
+    {
+        game.style.display = "none";
+            }
+        
+},10 )
 
 let birdFly = () => {
-    CureentflyValue = 1;
+    CurrentflyValue = 1;
     let flyValue = parseInt(window.getComputedStyle(bird).getPropertyValue("top"));
     bird.style.top = (flyValue - 65) + 'px';
 
@@ -25,3 +33,7 @@ let birdFly = () => {
 }
 
 window.addEventListener("keydown", birdFly);
+
+function gameOver(){
+    
+}

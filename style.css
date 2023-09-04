@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+/* body {
+    background-color: black;
+} */
+
 #game{
     height: 500px;
     width: 550px;
@@ -27,7 +31,7 @@
     position: relative;
     background-color: rgb(21, 254, 21);
     left: 450px;
-    /* animation: block 2s linear  infinite; */
+    animation: block 2s linear  infinite;
     
    
 }
