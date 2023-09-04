@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    background-color: black;
-}
-
 #game{
     height: 500px;
     width: 550px;
@@ -31,7 +27,7 @@ body {
     position: relative;
     background-color: rgb(21, 254, 21);
     left: 450px;
-    /* animation: block 2s linear  infinite; */
+    animation: block 2s linear  infinite;
     
    
 }
@@ -52,12 +48,12 @@ body {
     position: relative;
     left: 450px;
     top: -500px;
-    /* animation: block 2s linear  infinite; */
+    animation: block 2s linear  infinite;
    background-color: white;
     
 }
 
-#game-over{
+#result{
     height: 300px;
     width: 300px;
     position: absolute;
